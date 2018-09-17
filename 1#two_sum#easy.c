@@ -1,3 +1,4 @@
+/*this is a test for git*/
 int* twoSum(int* nums, int numSize, int target)
 {
     int a,b;
