@@ -5,9 +5,9 @@
   but you can use the already knew knowledge of the string
 */
 int lengthOfLongestSubstring(char* s) {
-	int pos[128];
-	int temp;
-	for(temp = 0; temp < 128; temp ++) pos[temp] = -1;
+    int pos[128];
+    int temp;
+    for(temp = 0; temp < 128; temp ++) pos[temp] = -1;
     int len = strlen(s);
     if(len == 0)
     	return 0;
