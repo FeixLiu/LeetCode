@@ -7,7 +7,8 @@ and besides figure the palindrome with odd digits
 think how to figure a palindrome with even digites such as bb
 lastly, if a palindrome has a length of 1000 digits, what to do?
 
-pay attention to, you cannot return a local variable
+pay attention 
+you cannot return a local variable
 */
 char* longestPalindrome(char* s) 
 {
