@@ -1,3 +1,14 @@
+/*
+think how to tell whether a string is a palindrome or not
+aba is a palindrome
+then, if babab a palindrome?
+or babac a palindrome?
+and besides figure the palindrome with odd digits
+think how to figure a palindrome with even digites such as bb
+lastly, if a palindrome has a length of 1000 digits, what to do?
+
+pay attention to, you cannot return a local variable
+*/
 char* longestPalindrome(char* s) 
 {
     int lens = strlen(s);
