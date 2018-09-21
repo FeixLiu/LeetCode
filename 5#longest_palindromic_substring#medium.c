@@ -48,9 +48,9 @@ char* longestPalindrome(char* s)
     	curmax = 1;
     	i ++;
     }
-    char* result = (char*)malloc((ceil -floor + 2) * sizeof(char));
-    for(i = 0; i < ceil -floor + 1; i ++)
+    char* result = (char*)malloc((ceil - floor + 2) * sizeof(char));
+    for(i = 0; i < ceil - floor + 1; i ++)
     	result[i] = s[floor + i];
-    result[ceil -floor + 1] = '\0';
+    result[ceil - floor + 1] = '\0';
     return result;
 }
