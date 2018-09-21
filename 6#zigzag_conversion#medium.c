@@ -1,15 +1,3 @@
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
-char* convert(char* s, int numRows);
-
-int main(void)
-{
-	char *s = "Apalindromeisaword,phrase,number,orothersequenceofunitsthatcanbereadthesamewayineitherdirection,withgeneralallowancesforadjustmentstopunctuationandworddividers.";
-	printf("%s\n", convert(s, 2));
-	return 0;
-}
-
 char* convert(char* s, int numRows) 
 {
     int lens = strlen(s), groupChara = numRows * 2 - 2, groupLine = numRows - 1;
