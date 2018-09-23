@@ -2,7 +2,6 @@ bool matchstar(char*, char, char*);
 
 bool isMatch(char* s, char* p)
 {
-	printf("%s %s\n",s, p);
 	if(p[0] == '\0' && s[0] == '\0') 
 		return true;
 	if(p[1] == '*')
