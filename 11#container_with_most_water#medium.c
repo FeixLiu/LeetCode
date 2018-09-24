@@ -1,21 +1,11 @@
-int getArea(int, int, int, int);
 int maxArea(int* height, int heightSize)
 {
 	int max = 0;
-	int i, j;
-	for(j = 1; j < heightSize; j ++)
-		for(i = 0; i < j; i ++)
-		{
-			int area = getArea(height[i], height[j], i, j);
-			if(area > max)
-				max = area;
-		}
-	return max;
-}
-
-int getArea(int hi, int hj, int i, int j)
-{
-	int lenght = j - i;
-	int height = hi > hj ? hj : hi;
-	return height * lenght;
+	int left = 0, right = heightSize - 1;
+	while(left < right)
+	{
+		int area = (right - left) * (height[left] > height[right] ? height[right --] : height[left ++]);
+		max = area > max ? area : max;		
+	}
+    return max;
 }
