@@ -1,3 +1,6 @@
+//plz recode this question
+
+
 bool matchstar(char*, char, char*);
 
 bool isMatch(char* s, char* p)
