@@ -16,7 +16,7 @@ int** threeSum(int* nums, int numsSize, int* returnSize)
 	{
 		if(nums[i] > 0) break;
 		if(i > 0 && nums[i] == nums[i - 1]) 
-		{
+		{// the same with the last calculate
 			i ++;
 			continue;
 		}
@@ -32,15 +32,15 @@ int** threeSum(int* nums, int numsSize, int* returnSize)
 				ans[ansC][2] = nums[finish];
 				ansC ++;
 				start ++, finish --;
-				while(start < finish && nums[start] == nums[start - 1]) start ++;
-				while(start < finish && nums[finish] == nums[finish + 1]) finish --;
+				while(start < finish && nums[start] == nums[start - 1]) start ++; // the same with the last end
+				while(start < finish && nums[finish] == nums[finish + 1]) finish --; // the same with the last first
 			}
-			else if(sum > 0) finish --;
-			else start ++;
+			else if(sum > 0) finish --; //the end number is too large
+			else start ++; // the start number is too samll
 		}
 		i ++;
 	}
-	*returnSize = ansC;
+	*returnSize = ansC; //the size of the answer array
 	return ans;
 }
 
