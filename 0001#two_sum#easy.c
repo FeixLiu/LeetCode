@@ -1,4 +1,6 @@
-/*this is a test for git*/
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
 int* twoSum(int* nums, int numSize, int target)
 {
     int a,b;
@@ -17,4 +19,3 @@ int* twoSum(int* nums, int numSize, int target)
     }
     return result;
 }
-
